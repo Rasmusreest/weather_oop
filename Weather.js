@@ -1,18 +1,18 @@
 class Weather {
     constructor(city) {
         this.city = city;
-        this.key = '1fbbb7f9023e148d00df6a5cf216e20d';
+        this.key = '021259759086656f1609cbf58a2902a7';
     }
 
     // data from API
     async weatherData() {
-        const resp = await fetch(
-            'https://api.openweathermap.org/data/2.5/weather?q=Toronto,CA&appid=' +
-            this.city +
-            "&appid=" +
-            this.key
-        );
+        const resp = await fetch('https://api.openweathermap.org/data/2.5/weather?q=Tartu,EE&appid=021259759086656f1609cbf58a2902a7' +
+            this.city + '&appid=' + this.key);
         const data = await resp.json();
         return data;
+    }
+    // change city
+    changeCityName(name){
+        this.city = name;
     }
 }
