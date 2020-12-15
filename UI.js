@@ -3,6 +3,7 @@ class UI {
         this.cityName = document.querySelector('#w-city');
         this.temp = document.querySelector('#w-temp');
         this.desc = document.querySelector('#w-desc');
+        this.humidity = document.querySelector('#w-humidity')
     }
 
     print(cityWeather){

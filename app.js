@@ -1,5 +1,6 @@
 // weather for given location
 const weather = new Weather('Tartu linn');
+// humidity for given city
 // app UI object
 const ui = new UI();
 //default city weather
