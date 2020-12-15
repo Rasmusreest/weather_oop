@@ -7,7 +7,7 @@ class Weather {
     // data from API
     async weatherData() {
         const resp = await fetch(
-            "https://api.openweathermap.org/data/2.5/weather?q=Tartu,EE&appid=1fbbb7f9023e148d00df6a5cf216e20d" +
+            'https://api.openweathermap.org/data/2.5/weather?q=Toronto,CA&appid=' +
             this.city +
             "&appid=" +
             this.key
